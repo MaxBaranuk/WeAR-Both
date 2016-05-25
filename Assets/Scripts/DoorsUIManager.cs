@@ -123,4 +123,21 @@ public class DoorsUIManager : MonoBehaviour {
     public void Exit() {
         CloseMenu();
     }
+
+    void OnDisable()
+    {
+        for (int i = 0; i < menuButtons.Length; i++)
+        {
+            menuButtons[i].GetComponent<RectTransform>().localPosition = new Vector3(145, menuButtons[i].GetComponent<RectTransform>().localPosition.y, 0);
+            plusBut.SetActive(true);
+            minusBut.SetActive(true);
+            nextBut.SetActive(true);
+            prevBut.SetActive(true);
+            screenshotBut.SetActive(true);
+            menuButton.GetComponent<Image>().enabled = true;
+
+            manager.nextBut.GetComponent<Button>().interactable = true;
+            manager.currentMode[manager.currentItem].SetActive(true);
+        }
+    }
 }
