@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="chart" size="10.000000 10.000000" />
+    <ImageTarget name="targetFlyer" size="10.000000 20.999153" />
+    <ImageTarget name="3d-house-vector-model9" size="10.000000 7.890909" />
+    <ImageTarget name="026" size="10.000000 11.781116" />
+    <ImageTarget name="divTarg" size="10.000000 4.694836" />
+  </Tracking>
+</QCARConfig>

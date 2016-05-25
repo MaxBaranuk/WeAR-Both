@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 98801868cd91c6347a98b8f94130bb5e
+timeCreated: 1461072293
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: divan0
+    100002: divan0 1
+    100004: divan1
+    100006: divan1 1
+    100008: divan2
+    100010: divan2 1
+    100012: divan3
+    100014: divan3 1
+    100016: //RootNode
+    100018: stol1
+    100020: stol1_00
+    100022: stol1_01
+    100024: stol1_02
+    100026: stol1_03
+    100028: stol2
+    100030: stol2_
+    100032: stol3
+    100034: stol3_model
+    100036: stol4
+    100038: stol4_00
+    100040: stol4_01
+    100042: stul1
+    100044: stul1_00
+    100046: stul1_01
+    100048: stul2
+    100050: stul2_00
+    100052: stul2_01
+    100054: stul3
+    100056: stul3_00
+    100058: divan_part1
+    100060: divan_part2
+    100062: divan1_1
+    400000: divan0
+    400002: divan0 1
+    400004: divan1
+    400006: divan1 1
+    400008: divan2
+    400010: divan2 1
+    400012: divan3
+    400014: divan3 1
+    400016: //RootNode
+    400018: stol1
+    400020: stol1_00
+    400022: stol1_01
+    400024: stol1_02
+    400026: stol1_03
+    400028: stol2
+    400030: stol2_
+    400032: stol3
+    400034: stol3_model
+    400036: stol4
+    400038: stol4_00
+    400040: stol4_01
+    400042: stul1
+    400044: stul1_00
+    400046: stul1_01
+    400048: stul2
+    400050: stul2_00
+    400052: stul2_01
+    400054: stul3
+    400056: stul3_00
+    400058: divan_part1
+    400060: divan_part2
+    400062: divan1_1
+    2300000: divan0 1
+    2300002: divan1 1
+    2300004: divan2 1
+    2300006: divan3 1
+    2300008: stol1_00
+    2300010: stol1_01
+    2300012: stol1_02
+    2300014: stol1_03
+    2300016: stol2_
+    2300018: stol3_model
+    2300020: stol4_00
+    2300022: stol4_01
+    2300024: stul1_00
+    2300026: stul1_01
+    2300028: stul2_00
+    2300030: stul2_01
+    2300032: stul3_00
+    2300034: divan_part1
+    2300036: divan_part2
+    3300000: divan0 1
+    3300002: divan1 1
+    3300004: divan2 1
+    3300006: divan3 1
+    3300008: stol1_00
+    3300010: stol1_01
+    3300012: stol1_02
+    3300014: stol1_03
+    3300016: stol2_
+    3300018: stol3_model
+    3300020: stol4_00
+    3300022: stol4_01
+    3300024: stul1_00
+    3300026: stul1_01
+    3300028: stul2_00
+    3300030: stul2_01
+    3300032: stul3_00
+    3300034: divan_part1
+    3300036: divan_part2
+    4300000: stol3_model
+    4300002: stol1_01
+    4300004: stol1_00
+    4300006: stol1_03
+    4300008: stol1_02
+    4300010: stol2_
+    4300012: stol4_01
+    4300014: stol4_00
+    4300016: stul1_01
+    4300018: stul1_00
+    4300020: stul2_01
+    4300022: stul2_00
+    4300024: stul3_00
+    4300026: divan1
+    4300028: divan2
+    4300030: divan0
+    4300032: divan3
+    4300034: divan_part1
+    4300036: divan_part2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
