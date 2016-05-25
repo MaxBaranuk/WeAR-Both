@@ -158,7 +158,18 @@ public class UInewManager : MonoBehaviour {
         }
     }
 
-   
+    void OnDisable()
+    {
+        for (int i = 1; i < buttons.Length; i++)
+        {
+            buttons[i].GetComponent<RectTransform>().localPosition = Vector3.zero;
+            buttons[i].GetComponent<RectTransform>().localScale = Vector3.zero;
+            buttons[i].SetActive(false);
+            buttonsPanel.SetActive(false);
+            menuButton.GetComponent<Button>().interactable = true;
+            menuButton.GetComponent<UnityEngine.UI.Image>().sprite = menu;
+        }
+    }
 
 
 }
