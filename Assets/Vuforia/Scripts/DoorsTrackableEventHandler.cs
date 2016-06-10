@@ -79,7 +79,7 @@ namespace Vuforia
         private void OnTrackingFound()
         {
             target.SetActive(false);
-
+//            Screen.orientation = ScreenOrientation.AutoRotation;
             doorsScene.SetActive (true);
             houseScene.SetActive(false);
             floorScene.SetActive(false);
@@ -89,7 +89,7 @@ namespace Vuforia
             doorscanvas.SetActive(true);
             floorCanvas.SetActive(false);
             minionCanvas.SetActive(false);
-            Screen.orientation = ScreenOrientation.AutoRotation;
+            
 //            indicator.SetActive(true);
         }
 

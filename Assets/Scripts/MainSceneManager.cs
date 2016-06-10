@@ -38,14 +38,17 @@ public class MainSceneManager : MonoBehaviour {
     float scaleMode;
     // Use this for initialization
     void Start () {
-        Screen.orientation = ScreenOrientation.AutoRotation;
+        
         currentMode = chairs;
         currInfoPanel = infoPanelPort;
         currentItem = 1;
         currentMode[currentItem].SetActive(true);
         CheckEnableButtons();
     }
-	
+
+    void OnEnable() {
+        Screen.orientation = ScreenOrientation.Landscape;
+    }
 	// Update is called once per frame
 	void Update () {
  //       if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();

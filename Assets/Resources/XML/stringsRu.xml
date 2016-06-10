@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <Language>
+       <name>Русский</name>
+	   <target>Наведите камеру
+на таргет</target>
+       <chairs>Кресла</chairs>
+	   <doors>Двери</doors>
+	   <divans>Диваны</divans>
+	   <tables>Столы</tables>
+	   <other>Другое</other>
+	   <info>Инфо</info>
+	   <bricks>Кирпич</bricks>
+	   <tile>Плитка</tile>
+	   <doorColor>Цвет
+дверной
+коробки</doorColor>
+	   <doorTexture>Текстура
+двери</doorTexture>
+	   <handsColor>Цвет
+поручней</handsColor>
+	   <windowFrame>Цвет
+рамы окна</windowFrame>
+	   <concreteTexture>Текстура
+бетона</concreteTexture>
+	   <exit>Выход</exit>
+	   <changeColor>Меняй цвет модели нажимая по ней</changeColor>
+	   <rotate>Вращай модель, используя свайп</rotate>
+	   <move>Меняй положение модели, зажав по ней пальцем</move>
+	   <tapPoints>Столы</tapPoints>
+	   <changeTile>Столы</changeTile>
+	   <fingers>У миньонов всего      пальца</fingers>
+	   <minionSpeak>Миньоны говорят на смеси
+испанского, итальянского,
+английского,
+французского и индийского языков.
+Также в их языке присутствуют элементы
+русского и корейского.</minionSpeak>
+	   <minionHeads>У миньонов всего    типов
+причесок, включая абсолютно
+лысых.</minionHeads>
+	   <minionPropeties>Минионы способны выживать
+при радиации, сверхнизком
+давлении, отсутствии воздуха и
+минусовых температурах.</minionPropeties>
+	   <floorTap>Расставляйте точки на полу длиным нажатием пальца</floorTap>
+	   <floorChanger>Меняйте модель плитки используя для этого
+соответствующие кнопки</floorChanger>
+   </Language>
+
+    
