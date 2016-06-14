@@ -1,8 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
    <Language>
        <name>Українська</name>
-	   <app_name>Some Game</app_name>
-       <score_text>Score: </score_text>
+	   <target>Наведіть камеру
+на таргет</target>
+       <chairs>Крісла</chairs>
+	   <doors>Двері</doors>
+	   <divans>Дивани</divans>
+	   <tables>Столи</tables>
+	   <other>Інше</other>
+	   <info>Інфо</info>
+	   <bricks>Цегла</bricks>
+	   <tile>Плитка</tile>
+	   <doorColor>Колір дверної
+коробки</doorColor>
+	   <doorTexture>Текстура
+двері</doorTexture>
+	   <handsColor>Колір
+поручней</handsColor>
+	   <windowFrame>Колір
+рами вікна</windowFrame>
+	   <concreteTexture>Текстура
+бетону</concreteTexture>
+	   <exit>Вихід</exit>
+	   <changeColor>Змінюй колір моделі натискаючи на неї</changeColor>
+	   <rotate>Обертай модель використовуючи свайп</rotate>
+	   <move>Змінюй положення моделі, тиснучи на неї пальцем</move>
+	   <fingers>У посіпак всього        пальці</fingers>
+	   <minionSpeak>Посіпаки розмовляють на
+суміші іспанської, італійської,
+англійської,
+французьської та індійської мов.
+Також в їх мові є елементи
+російської та корейської мови.</minionSpeak>
+	   <minionHeads>У посіпак всього      типів
+зачісок, включаючи абсолютно
+лисих.</minionHeads>
+       <minionPropeties>Посіпаки здатні виживати
+при радіації, наднизькому
+тиску, відсутності повітря і
+мінусових температурах.</minionPropeties>
+	   <floorTap>Розставляйте точки на підлозі довгим натисканням пальця</floorTap>
+       <floorChanger>Міняйте модель плитки використовуючи для цього
+відповідні кнопки</floorChanger>
    </Language>
+
+    
 
     

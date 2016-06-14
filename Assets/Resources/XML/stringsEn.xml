@@ -1,8 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
    <Language>
        <name>English</name>
-	   <target>Find target</target>
-       <score_text>Score: </score_text>
+	   <target>Point the camera
+on marker</target>
+       <chairs>Chairs</chairs>
+	   <doors>Doors</doors>
+	   <divans>Sofas</divans>
+	   <tables>Tables</tables>
+	   <other>Other</other>
+	   <info>Info</info>
+	   <bricks>Bricks</bricks>
+	   <tile>Tile</tile>
+	   <doorColor>The door
+frame
+color</doorColor>
+	   <doorTexture>Door
+color</doorTexture>
+	   <handsColor>Handrails
+color</handsColor>
+	   <windowFrame>The window
+frame color</windowFrame>
+	   <concreteTexture>Concrete
+color</concreteTexture>
+	   <exit>Exit</exit>
+	   <changeColor>Tap on model to change its color</changeColor>
+	   <rotate>Use swipe to rotate the model</rotate>
+	   <move>Hold your finger on model to change its position</move>
+	   <fingers>Minions have only        fingers</fingers>
+       <minionSpeak>Minions speak a mixture of
+Spanish, Italian, English,
+French and Indian languages.
+Also, there are elements of Russian
+and Korean in their language.</minionSpeak>
+	   <minionHeads>Minions have only      hairstyle
+           types, including absolutely
+bald.</minionHeads>
+       <minionPropeties>МMinions are able to survive under
+the radiation, ultra-low
+pressure, with no air and
+sub-zero temperatures.</minionPropeties>
+	   <floorTap>Do the long touch with your finger to set the points on the floor</floorTap>
+	   <floorChanger>Use special buttons to change the tile model</floorChanger>
    </Language>
 
+    
     
