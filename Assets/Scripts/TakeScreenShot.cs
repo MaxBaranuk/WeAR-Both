@@ -2,6 +2,7 @@
 using System.Collections;
 using System.IO;
 using UnityEngine.UI;
+using System.Runtime.InteropServices;
 
 public class TakeScreenShot : MonoBehaviour 
 {
@@ -29,9 +30,7 @@ public class TakeScreenShot : MonoBehaviour
 
     void ScreenshotSaved()
     {
-#if UNITY_IPHONE || UNITY_IPAD
-//		GeneralSharingiOSBridge.ShareTextWithImage (ScreenshotHandler.savedImagePath, "Hello !!! \nThis is post from TheAppGuruz");
-#endif
+
     }
 
     public void ButtonShare()
@@ -74,7 +73,7 @@ public class TakeScreenShot : MonoBehaviour
 //        string path = Application.persistentDataPath + "/wear.png";
         File.WriteAllBytes (path, dataToSave);
 
-        #if UNITY_ANDROID
+#if UNITY_ANDROID
 
         AndroidJavaClass intentClass = new AndroidJavaClass("android.content.Intent");
 
@@ -96,9 +95,11 @@ public class TakeScreenShot : MonoBehaviour
 
             currentActivity.Call("startActivity", intentObject);
 
-        #elif UNITY_IPHONE || UNITY_IPAD
-//        StartCoroutine (ScreenshotHandler.Save (path, "Media Share", true));
-        #endif
+#elif UNITY_IOS
+        CallSocialShareAdvanced("", "", "", path);
+#else
+		Debug.Log("No sharing set up for this platform.");
+#endif
 
         _isProcessing = false;
 		buttonShare.enabled = true;
@@ -110,5 +111,45 @@ public class TakeScreenShot : MonoBehaviour
         minusBut.SetActive(true);
     }
 
+#if UNITY_IOS
+    public struct ConfigStruct
+    {
+        public string title;
+        public string message;
+    }
+
+    [DllImport("__Internal")]
+    private static extern void showAlertMessage(ref ConfigStruct conf);
+
+    public struct SocialSharingStruct
+    {
+        public string text;
+        public string url;
+        public string image;
+        public string subject;
+    }
+
+    [DllImport("__Internal")]
+    private static extern void showSocialSharing(ref SocialSharingStruct conf);
+
+    public static void CallSocialShare(string title, string message)
+    {
+        ConfigStruct conf = new ConfigStruct();
+        conf.title = title;
+        conf.message = message;
+        showAlertMessage(ref conf);
+    }
+
+    public static void CallSocialShareAdvanced(string defaultTxt, string subject, string url, string img)
+    {
+        SocialSharingStruct conf = new SocialSharingStruct();
+        conf.text = defaultTxt;
+        conf.url = url;
+        conf.image = img;
+        conf.subject = subject;
+
+        showSocialSharing(ref conf);
+    }
+#endif
 
 }
