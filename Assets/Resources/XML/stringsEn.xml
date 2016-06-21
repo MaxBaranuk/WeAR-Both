@@ -41,6 +41,14 @@ pressure, with no air and
 sub-zero temperatures.</minionPropeties>
 	   <floorTap>Do the long touch with your finger to set the points on the floor</floorTap>
 	   <floorChanger>Use special buttons to change the tile model</floorChanger>
+	   <start>Start</start>
+	   <manual>Tutorial</manual>
+	   <download>Markers</download>
+	   <feedback>Support</feedback>
+	   <tutorial_print>Download and print the markers</tutorial_print>
+	   <tutorial_target>Place the marker and 
+point camera on it</tutorial_target>
+	   <tutorial_enjoy>Enjoy the augmented reality</tutorial_enjoy>
    </Language>
 
     

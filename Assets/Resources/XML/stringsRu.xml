@@ -43,6 +43,14 @@
 	   <floorTap>Расставляйте точки на полу длинным нажатием пальца</floorTap>
 	   <floorChanger>Меняйте модель плитки используя для этого
 соответствующие кнопки</floorChanger>
+<start>Старт</start>
+	   <manual>Инструкция</manual>
+	   <download>Маркеры</download>
+	   <feedback>Поддержка</feedback>
+	   <tutorial_print>Скачать и распечатать маркеры</tutorial_print>
+	   <tutorial_target>Расположить маркер и 
+навести на него камеру</tutorial_target>
+	   <tutorial_enjoy>Наслаждайтесь дополненной реальностью</tutorial_enjoy>
    </Language>
 
     

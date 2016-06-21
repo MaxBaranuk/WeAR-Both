@@ -10,7 +10,7 @@ public class LoadingScene : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Screen.orientation = ScreenOrientation.Portrait;
-		StartCoroutine(LoadALevel(1));
+		StartCoroutine(LoadALevel(2));
         StartCoroutine(ShowImages()); 
 	}
 	
