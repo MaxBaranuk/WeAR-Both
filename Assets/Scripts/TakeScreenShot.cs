@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿ using UnityEngine;
 using System.Collections;
 using System.IO;
 using UnityEngine.UI;
@@ -71,7 +71,7 @@ public class TakeScreenShot : MonoBehaviour
         Debug.Log(date);
        string path = Application.persistentDataPath + "/wear"+ date + ".png";
 //        string path = Application.persistentDataPath + "/wear.png";
-        File.WriteAllBytes (path, dataToSave);
+		File.WriteAllBytes(path, dataToSave);
 
 #if UNITY_ANDROID
 
