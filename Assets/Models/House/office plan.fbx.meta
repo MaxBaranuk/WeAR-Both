@@ -11,27 +11,42 @@ ModelImporter:
     100006: walls_sep
     100008: windows
     100010: polySurface543
+    100012: exterior_walls
+    100014: texture_set_2
+    100016: polySurface608
     400000: Objects
     400002: //RootNode
     400004: texture_set
     400006: walls_sep
     400008: windows
     400010: polySurface543
+    400012: exterior_walls
+    400014: texture_set_2
+    400016: polySurface608
     2300000: Objects
     2300002: texture_set
     2300004: walls_sep
     2300006: windows
     2300008: polySurface543
+    2300010: exterior_walls
+    2300012: texture_set_2
+    2300014: polySurface608
     3300000: Objects
     3300002: texture_set
     3300004: walls_sep
     3300006: windows
     3300008: polySurface543
+    3300010: exterior_walls
+    3300012: texture_set_2
+    3300014: polySurface608
     4300000: Objects
     4300002: texture_set
     4300004: walls_sep
     4300006: windows
     4300008: polySurface543
+    4300010: exterior_walls
+    4300012: texture_set_2
+    4300014: polySurface608
     9500000: //RootNode
   materials:
     importMaterials: 1

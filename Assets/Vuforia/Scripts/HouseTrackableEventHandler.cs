@@ -4,6 +4,7 @@ All Rights Reserved.
 Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
+using System;
 using UnityEngine;
 
 namespace Vuforia
@@ -26,14 +27,13 @@ namespace Vuforia
         public GameObject doorscanvas;
         public GameObject floorCanvas;
         public GameObject minionCanvas;
+
         #region PRIVATE_MEMBER_VARIABLES
 
         private TrackableBehaviour mTrackableBehaviour;
     
         #endregion // PRIVATE_MEMBER_VARIABLES
-
-
-
+        
         #region UNTIY_MONOBEHAVIOUR_METHODS
     
         void Start()

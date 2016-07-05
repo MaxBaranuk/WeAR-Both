@@ -21,13 +21,41 @@ public class SceneLoader : MonoBehaviour {
 
     [SerializeField] private string DetailPlanSceneName;
     [SerializeField] private bool IsAutoActivateSceneWhenLoad;
+    [SerializeField] private Image _alphaImage;
+
+    private bool _isChanging;
 
     /// <summary>
     /// Load the main scene.
     /// </summary>
     public void LoadDetailedPlanScene()
     {
-        StartCoroutine(AsyncLoadScene(DetailPlanSceneName));
+//        StartCoroutine(AsyncLoadScene(DetailPlanSceneName));
+        _alphaImage.gameObject.SetActive(true);
+        _isChanging = true;
+    }
+
+    private void Update()
+    {
+        ChangeImageAlpha(_alphaImage);
+
+        if (_alphaImage.color.a >= .99f)
+            StartCoroutine(AsyncLoadScene(DetailPlanSceneName));
+    }
+
+    private void ChangeImageAlpha(Image alphaImage)
+    {
+        if (!_isChanging) return;
+
+
+        if (alphaImage.color.a < .99f)
+        {
+            Color alpha = alphaImage.color;
+            alpha.a += .3f * Time.deltaTime;
+            alphaImage.color = alpha;
+        }
+
+      
     }
 
     /// <summary>
