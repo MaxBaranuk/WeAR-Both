@@ -9,14 +9,12 @@ public class ModelRotationManager : MonoBehaviour
     public float speed;
     public float xDeg, lerpSpeed, friction;
     Quaternion fromRotation, toRotation;
-
-    public Text text;
-
+    
     private void Update()
     {
         RotateModel();
 
-        text.text = _interactModel.transform.rotation.ToString();
+        AutoRotate();
     }
 
     private void RotateModel()
@@ -30,7 +28,12 @@ public class ModelRotationManager : MonoBehaviour
     {
         xDeg -= xNum * speed * friction;
         fromRotation = _interactModel.transform.rotation;
-        toRotation = Quaternion.Euler(0, xDeg, 0);
+        toRotation = Quaternion.Euler(0, -xDeg, 0);
         _interactModel.transform.rotation = Quaternion.Lerp(fromRotation, toRotation, lerpSpeed);
+    }
+
+    private void AutoRotate()
+    {
+        _interactModel.transform.Rotate(0f, 10f * Time.deltaTime, 0f);
     }
 }

@@ -75,11 +75,8 @@ public class TakeScreenShotHouse : MonoBehaviour
 #endif
 
         _isProcessing = false;
-        panel.SetActive(true);
         position.enabled = true;
         screen.enabled = true;
-        next.enabled = true;
-        prev.enabled = true;
         //buttonShare.SetActive(true);
     }
 #if UNITY_IOS

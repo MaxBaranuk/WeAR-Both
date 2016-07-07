@@ -92,7 +92,7 @@ namespace Vuforia
             doorscanvas.SetActive(false);
             floorCanvas.SetActive(false);
             minionCanvas.SetActive(false);
-            Screen.orientation = ScreenOrientation.Portrait;
+            Screen.orientation = ScreenOrientation.AutoRotation;
 
  //           indicator.SetActive(true);
         }
