@@ -11,11 +11,8 @@
 	   <info>Инфо</info>
 	   <bricks>Кирпич</bricks>
 	   <tile>Плитка</tile>
-	   <doorColor>Цвет
-дверной
-коробки</doorColor>
-	   <doorTexture>Текстура
-двери</doorTexture>
+	   <houseScale>Изменяйте масштаб модели, используя свайп</houseScale>
+	   <houserotate>Вращайте модель</houserotate>
 	   <handsColor>Цвет
 поручней</handsColor>
 	   <windowFrame>Цвет
@@ -43,7 +40,7 @@
 	   <floorTap>Расставляйте точки на полу длинным нажатием пальца</floorTap>
 	   <floorChanger>Меняйте модель плитки используя для этого
 соответствующие кнопки</floorChanger>
-<start>Старт</start>
+<start>СТАРТ</start>
 	   <manual>Инструкция</manual>
 	   <download>Маркеры</download>
 	   <feedback>Поддержка</feedback>

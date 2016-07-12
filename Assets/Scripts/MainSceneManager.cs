@@ -47,7 +47,7 @@ public class MainSceneManager : MonoBehaviour {
     }
 
     void OnEnable() {
-        Screen.orientation = ScreenOrientation.Landscape;
+ //       Screen.orientation = ScreenOrientation.Landscape;
     }
 	// Update is called once per frame
 	void Update () {
@@ -56,7 +56,7 @@ public class MainSceneManager : MonoBehaviour {
         if (currInfoPanel != infoPanelPort && Screen.orientation == ScreenOrientation.Portrait) {
             currInfoPanel.SetActive(false);
             currInfoPanel = infoPanelPort;
-            if(infoOpen) currInfoPanel.SetActive(true);
+            if (infoOpen) currInfoPanel.SetActive(true);
         }
         if (currInfoPanel != infoPanelLand && Screen.orientation == ScreenOrientation.Landscape) {
             currInfoPanel.SetActive(false);

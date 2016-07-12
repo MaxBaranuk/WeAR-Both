@@ -4,13 +4,21 @@ using UnityEngine.UI;
 
 public class PinchManager : MonoBehaviour
 {
-    [SerializeField] private GameObject _targetObject;
+//    [SerializeField] private GameObject _targetObject;
 
     private int _scaleCounter;
 
+    void OnEnable() {
+        Invoke("DisableAnimator", 1.5f);
+    }
+
+    void DisableAnimator() {
+        GetComponent<Animator>().enabled = false;
+    }
+
     private void Update()
     {
-       PinchObject(_targetObject, _scaleCounter);
+       PinchObject(gameObject, _scaleCounter);
     }
     
     private void PinchObject(GameObject targetObject, int scaleCounter)
@@ -32,5 +40,10 @@ public class PinchManager : MonoBehaviour
             }
             scaleCounter++;
         }
+    }
+
+    void OnDisable()
+    {
+        GetComponent<Animator>().enabled = true;
     }
 }

@@ -21,14 +21,16 @@ public class LanguageManager : MonoBehaviour {
     public Text doorsInfoLand2Text;
     public Text doorsInfoLand3Text;
 
-    public Text brickText;
-    public Text tileText;
-    public Text doorColorText;
-    public Text doorTextureText;
-    public Text handsColorText;
-    public Text windowFrameText;
-    public Text concreteTextureText;
-    public Text exitText;
+    public Text houseInfoScale;
+    public Text houseInfoRotate;
+    //public Text brickText;
+    //public Text tileText;
+    //public Text doorColorText;
+    //public Text doorTextureText;
+    //public Text handsColorText;
+    //public Text windowFrameText;
+    //public Text concreteTextureText;
+    //public Text exitText;
 
     public Text minionfingersText;
     public Text minionSpeakText;
@@ -87,14 +89,14 @@ public class LanguageManager : MonoBehaviour {
                 doorsInfoLand3Text.text = "" + levelInfo.InnerText;
             }
 
-            if (levelInfo.Name == "bricks") brickText.text = "" + levelInfo.InnerText;
-            if (levelInfo.Name == "tile") tileText.text = "" + levelInfo.InnerText;
-            if (levelInfo.Name == "doorColor") doorColorText.text = "" + levelInfo.InnerText;
-            if (levelInfo.Name == "doorTexture") doorTextureText.text = "" + levelInfo.InnerText;
-            if (levelInfo.Name == "handsColor") handsColorText.text = "" + levelInfo.InnerText;
-            if (levelInfo.Name == "windowFrame") windowFrameText.text = "" + levelInfo.InnerText;
-            if (levelInfo.Name == "concreteTexture") concreteTextureText.text = "" + levelInfo.InnerText;
-            if (levelInfo.Name == "exit") exitText.text = "" + levelInfo.InnerText;
+            if (levelInfo.Name == "houseScale") houseInfoScale.text = "" + levelInfo.InnerText;
+            if (levelInfo.Name == "houserotate") houseInfoRotate.text = "" + levelInfo.InnerText;
+            //if (levelInfo.Name == "doorColor") doorColorText.text = "" + levelInfo.InnerText;
+            //if (levelInfo.Name == "doorTexture") doorTextureText.text = "" + levelInfo.InnerText;
+            //if (levelInfo.Name == "handsColor") handsColorText.text = "" + levelInfo.InnerText;
+            //if (levelInfo.Name == "windowFrame") windowFrameText.text = "" + levelInfo.InnerText;
+            //if (levelInfo.Name == "concreteTexture") concreteTextureText.text = "" + levelInfo.InnerText;
+            //if (levelInfo.Name == "exit") exitText.text = "" + levelInfo.InnerText;
 
 
             if (levelInfo.Name == "fingers") minionfingersText.text = "" + levelInfo.InnerText;

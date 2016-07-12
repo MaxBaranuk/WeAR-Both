@@ -11,10 +11,8 @@
 	   <info>Інфо</info>
 	   <bricks>Цегла</bricks>
 	   <tile>Плитка</tile>
-	   <doorColor>Колір дверної
-коробки</doorColor>
-	   <doorTexture>Текстура
-двері</doorTexture>
+	   <houseScale>Змінюйте масштаб моделі використовуючи свайп</houseScale>
+	   <houserotate>Обертайте модель</houserotate>
 	   <handsColor>Колір
 поручней</handsColor>
 	   <windowFrame>Колір
@@ -42,7 +40,7 @@
 	   <floorTap>Розставляйте точки на підлозі довгим натисканням пальця</floorTap>
        <floorChanger>Міняйте модель плитки використовуючи для цього
 відповідні кнопки</floorChanger>
-<start>Старт</start>
+<start>СТАРТ</start>
 	   <manual>Інструкція</manual>
 	   <download>Маркери</download>
 	   <feedback>Підтримка</feedback>
