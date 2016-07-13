@@ -11,11 +11,8 @@ on marker</target>
 	   <info>Info</info>
 	   <bricks>Bricks</bricks>
 	   <tile>Tile</tile>
-	   <doorColor>The door
-frame
-color</doorColor>
-	   <doorTexture>Door
-color</doorTexture>
+	   <houseScale>Change model scale by swipe</houseScale>
+	   <houserotate>Rotate model</houserotate>
 	   <handsColor>Handrails
 color</handsColor>
 	   <windowFrame>The window
@@ -35,13 +32,13 @@ and Korean in their language.</minionSpeak>
 	   <minionHeads>   Minions have only      hairstyle
 types, including absolutely
 bald.</minionHeads>
-       <minionPropeties>МMinions are able to survive under
+       <minionPropeties>Minions are able to survive under
 the radiation, ultra-low
 pressure, with no air and
 sub-zero temperatures.</minionPropeties>
 	   <floorTap>Do the long touch with your finger to set the points on the floor</floorTap>
 	   <floorChanger>Use special buttons to change the tile model</floorChanger>
-	   <start>Start</start>
+	   <start>START</start>
 	   <manual>Tutorial</manual>
 	   <download>Markers</download>
 	   <feedback>Support</feedback>

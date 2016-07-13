@@ -7,13 +7,13 @@ public class UIModePanel : MonoBehaviour {
     public GameObject[] modeButtons;
     MainSceneManager manager;
     GameObject currButton;
-    DoorsUIManager uiManager;
+//    DoorsUIManager uiManager;
 
 	// Use this for initialization
 	void Start () {
         currButton = modeButtons[0];
         manager = GameObject.Find("SceneManager").GetComponent<MainSceneManager>();
-        uiManager = GetComponentInParent<DoorsUIManager>();
+//        uiManager = GetComponentInParent<DoorsUIManager>();
     }
 
     // Update is called once per frame

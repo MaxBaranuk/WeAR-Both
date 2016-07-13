@@ -79,7 +79,7 @@ namespace Vuforia
         private void OnTrackingFound()
         {
             target.SetActive(false);
-//            Screen.orientation = ScreenOrientation.AutoRotation;
+            Screen.orientation = ScreenOrientation.AutoRotation;
             doorsScene.SetActive (true);
             houseScene.SetActive(false);
             floorScene.SetActive(false);
