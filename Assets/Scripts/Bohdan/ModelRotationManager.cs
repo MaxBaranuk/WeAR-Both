@@ -28,7 +28,7 @@ public class ModelRotationManager : MonoBehaviour
     {
         xDeg -= xNum * speed * friction;
         fromRotation = _interactModel.transform.rotation;
-        toRotation = Quaternion.Euler(0, -xDeg, 0);
+        toRotation = Quaternion.Euler(0, xDeg, 0);
         _interactModel.transform.rotation = Quaternion.Lerp(fromRotation, toRotation, lerpSpeed);
     }
 

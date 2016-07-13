@@ -6,7 +6,6 @@ using System.Runtime.InteropServices;
 
 public class TakeScreenShotHouse : MonoBehaviour 
 {
-	public GameObject panel;
     public Image position;
     public Image screen;
     public Image next;
@@ -17,7 +16,6 @@ public class TakeScreenShotHouse : MonoBehaviour
 
 	public void ButtonShare()
 	{
-        panel.SetActive(false);
         position.enabled = false;
         screen.enabled = false;
         next.enabled = false;
@@ -26,6 +24,7 @@ public class TakeScreenShotHouse : MonoBehaviour
 
 		if (!_isProcessing) 
 		{
+            Debug.Log(" Shit happens");
 			StartCoroutine (ShareScreenshot());
 		}
 	}
