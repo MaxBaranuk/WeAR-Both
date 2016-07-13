@@ -53,12 +53,12 @@ public class MainSceneManager : MonoBehaviour {
 	void Update () {
  //       if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
         UserInput();
-        if (currInfoPanel != infoPanelPort && Screen.orientation == ScreenOrientation.Portrait) {
+        if (currInfoPanel != infoPanelPort && Input.deviceOrientation == DeviceOrientation.Portrait) {
             currInfoPanel.SetActive(false);
             currInfoPanel = infoPanelPort;
             if (infoOpen) currInfoPanel.SetActive(true);
         }
-        if (currInfoPanel != infoPanelLand && Screen.orientation == ScreenOrientation.Landscape) {
+        if (currInfoPanel != infoPanelLand && (Input.deviceOrientation == DeviceOrientation.LandscapeLeft| Input.deviceOrientation == DeviceOrientation.LandscapeLeft)) {
             currInfoPanel.SetActive(false);
             currInfoPanel = infoPanelLand;
             if (infoOpen) currInfoPanel.SetActive(true);

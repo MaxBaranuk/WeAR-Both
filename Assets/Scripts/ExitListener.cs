@@ -5,6 +5,7 @@ public class ExitListener : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        
         Screen.orientation = ScreenOrientation.AutoRotation;
     }
 	

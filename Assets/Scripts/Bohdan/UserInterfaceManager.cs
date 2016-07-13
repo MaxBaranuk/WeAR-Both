@@ -29,7 +29,8 @@ public class UserInterfaceManager : MonoBehaviour
     {
         MakeElementActive(InfoWindow);
 
-        _infoImage.sprite = Resources.Load<Sprite>(Screen.orientation == ScreenOrientation.LandscapeRight || Screen.orientation == ScreenOrientation.LandscapeLeft ? "infoLandscape" : "infoPortrait");
+//        _infoImage.sprite = Resources.Load<Sprite>(Screen.orientation == ScreenOrientation.LandscapeRight || Screen.orientation == ScreenOrientation.LandscapeLeft ? "infoLandscape" : "infoPortrait");
+        _infoImage.sprite = Resources.Load<Sprite>(Input.deviceOrientation == DeviceOrientation.LandscapeRight || Input.deviceOrientation == DeviceOrientation.LandscapeLeft ? "infoLandscape" : "infoPortrait");
     }
 
     private void Start()
