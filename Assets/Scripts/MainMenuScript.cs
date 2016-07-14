@@ -57,12 +57,13 @@ public class MainMenuScript : MonoBehaviour {
 	}
 
     public void StartAR() {
-        string expPath = GooglePlayDownloader.GetExpansionFilePath();
-        string mainPath = GooglePlayDownloader.GetMainOBBPath(expPath);
-        string patchPath = GooglePlayDownloader.GetPatchOBBPath(expPath);
-        if (mainPath == null || patchPath == null)
-            GooglePlayDownloader.FetchOBB();
-        else SceneManager.LoadScene(1);
+        //string expPath = GooglePlayDownloader.GetExpansionFilePath();
+        //string mainPath = GooglePlayDownloader.GetMainOBBPath(expPath);
+        //string patchPath = GooglePlayDownloader.GetPatchOBBPath(expPath);
+        //if (mainPath == null || patchPath == null)
+        //    GooglePlayDownloader.FetchOBB();
+        //else
+            SceneManager.LoadScene(1);
     }
 
     public void ManualButtonPressed() {

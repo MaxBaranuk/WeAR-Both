@@ -62,7 +62,7 @@ public class ModelRotationManager : MonoBehaviour
 
             if (scaleCounter % 2 == 0)
             {
-                transform.localScale = new Vector3(transform.localScale.x - deltaMagnitudeDiff * 0.02f, transform.localScale.y - deltaMagnitudeDiff * 0.02f, transform.localScale.z - deltaMagnitudeDiff * 0.02f);
+                transform.localScale = new Vector3(transform.localScale.x - deltaMagnitudeDiff * 0.02f/(Screen.height/600), transform.localScale.y - deltaMagnitudeDiff * 0.02f, transform.localScale.z - deltaMagnitudeDiff * 0.02f);
                 if (transform.localScale.x < 0.1f | transform.localScale.y < 0.1f | transform.localScale.z < 0.1f) transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
             }
             scaleCounter++;
