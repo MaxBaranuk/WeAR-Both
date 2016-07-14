@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 279336905
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bf105c55eb3af17e55643350f8630c16
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 4af2077406ca878c349d5f1e05f3dc03
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: e246bd21db86f8346bc66895a661fcc4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cadfb90286c81fd42a6785e4e7cd3024, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4a18e4e387f1b8a44841576d8ca2d0f0, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/Prefabs/Targets/ImageTargetMinionSite.prefab
+Dependencies: []

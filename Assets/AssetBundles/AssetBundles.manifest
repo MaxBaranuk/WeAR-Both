@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: doorsscene
+      Dependencies: {}
+    Info_1:
+      Name: floorscene
+      Dependencies: {}
+    Info_2:
+      Name: housescene
+      Dependencies: {}
+    Info_3:
+      Name: minionscene
+      Dependencies: {}
+    Info_4:
+      Name: doortarget
+      Dependencies: {}
+    Info_5:
+      Name: floortarget
+      Dependencies: {}
+    Info_6:
+      Name: housetarget
+      Dependencies: {}
+    Info_7:
+      Name: minionhoriztarget
+      Dependencies: {}
+    Info_8:
+      Name: minionverttarget
+      Dependencies: {}
+    Info_9:
+      Name: doorui
+      Dependencies: {}
+    Info_10:
+      Name: floorui
+      Dependencies: {}
+    Info_11:
+      Name: houseui
+      Dependencies: {}
+    Info_12:
+      Name: minionui
+      Dependencies: {}

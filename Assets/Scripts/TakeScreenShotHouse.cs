@@ -6,20 +6,20 @@ using System.Runtime.InteropServices;
 
 public class TakeScreenShotHouse : MonoBehaviour 
 {
-    public Image position;
+    public Image info;
     public Image screen;
-    public Image next;
-    public Image prev;
+//    public Image next;
+//    public Image prev;
 	public string message;
 
 	private bool _isProcessing = false;
 
 	public void ButtonShare()
 	{
-        position.enabled = false;
+        info.enabled = false;
         screen.enabled = false;
-        next.enabled = false;
-        prev.enabled = false;
+//        next.enabled = false;
+//        prev.enabled = false;
 		//buttonShare.SetActive(false);
 
 		if (!_isProcessing) 
@@ -74,7 +74,7 @@ public class TakeScreenShotHouse : MonoBehaviour
 #endif
 
         _isProcessing = false;
-        position.enabled = true;
+        info.enabled = true;
         screen.enabled = true;
         //buttonShare.SetActive(true);
     }

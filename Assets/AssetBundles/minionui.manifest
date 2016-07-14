@@ -1,0 +1,66 @@
+ManifestFileVersion: 0
+CRC: 1352859950
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 32d91196c714fc33fc1b6763a05f6170
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 78bac3fd66257f1664535144980f241f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: cd3f2252888f60b4da4521bee8394441, type: 3}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 1741964061, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -405508275, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 1679637790, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 1367256648, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 43309592c7fe6194691829e9133e4e8b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5e5610f21c86d6e4c8612300319bcd78, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 81422256ce4f4e7488c5061fa9c29b4a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0e65a8b8f5dd9a349b2940240f69ab4e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ac5d01b9dfcb35848abd0fc14b1431e1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0578f17d53f805a428d622999da205e8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7ea6579e9c320344fbeefcfe36d68bbe, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 225
+  Script: {instanceID: 0}
+Assets:
+- Assets/Prefabs/UIComponents/MinionCanv.prefab
+Dependencies: []
