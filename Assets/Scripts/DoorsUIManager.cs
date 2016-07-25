@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class DoorsUIManager : MonoBehaviour {
 
     //public GameObject menuButton;
-    public RectTransform screenshotBut;
+
     //public GameObject plusBut;
     //public GameObject minusBut;
     //public GameObject nextBut;
@@ -48,9 +48,10 @@ public class DoorsUIManager : MonoBehaviour {
     public void CloseMenu() {
         anim.SetTrigger("Close");
         manager.currentMode[manager.currentItem].SetActive(true);
- //       manager.currentItem = 0;
-//        manager.currentMode[0].SetActive(true);
+        //       manager.currentItem = 0;
+        //        manager.currentMode[0].SetActive(true);
         //        StartCoroutine(Close());
+        manager.CheckEnableButtons();
     }
 
 //    IEnumerator Open() {

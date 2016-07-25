@@ -29,6 +29,7 @@ public class TutorialSceneScript : MonoBehaviour {
                 break;
         }
         SetLanguage(path);
+        Screen.orientation = ScreenOrientation.Portrait;
     }
 
 

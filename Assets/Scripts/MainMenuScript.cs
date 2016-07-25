@@ -30,6 +30,7 @@ public class MainMenuScript : MonoBehaviour {
                 break;
         }
         SetLanguage(path);
+        Screen.orientation = ScreenOrientation.Portrait;
     }
 
 

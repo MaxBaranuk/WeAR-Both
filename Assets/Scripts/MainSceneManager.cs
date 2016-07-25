@@ -12,8 +12,22 @@ public class MainSceneManager : MonoBehaviour {
     public GameObject[] others;
 
     public Material[] doorMaterials;
-    public Material[] sofaMaterials;
+//    public Material[] sofaMaterials;
     public Material[] tableMaterials;
+
+    [SerializeField]
+    Material[] chair1Materials;
+    [SerializeField]
+    Material[] chair2Materials;
+    [SerializeField]
+    Material[] chair3Materials;
+    [SerializeField]
+    Material[] sofa1Materials;
+    [SerializeField]
+    Material[] sofa2Materials;
+    [SerializeField]
+    Material[] sofa3Materials;
+    Material[] currMaterials;
 
     public Material[] firePlaceMaterials;
 
@@ -29,7 +43,7 @@ public class MainSceneManager : MonoBehaviour {
 
     public GameObject infoPanelLand;
     public GameObject infoPanelPort;
-
+    public RectTransform screenshotBut;
 
     GameObject currInfoPanel;
     bool infoOpen;
@@ -47,22 +61,44 @@ public class MainSceneManager : MonoBehaviour {
     }
 
     void OnEnable() {
- //       Screen.orientation = ScreenOrientation.Landscape;
+        Screen.orientation = ScreenOrientation.AutoRotation;
     }
 	// Update is called once per frame
 	void Update () {
  //       if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
         UserInput();
-        if (currInfoPanel != infoPanelPort && Input.deviceOrientation == DeviceOrientation.Portrait) {
+        //if (currInfoPanel != infoPanelPort && Input.deviceOrientation == DeviceOrientation.Portrait)
+        //{
+        //    currInfoPanel.SetActive(false);
+        //    currInfoPanel = infoPanelPort;
+        //    if (infoOpen) currInfoPanel.SetActive(true);
+        //}
+        //if (currInfoPanel != infoPanelLand && (Input.deviceOrientation == DeviceOrientation.LandscapeLeft | Input.deviceOrientation == DeviceOrientation.LandscapeLeft))
+        //{
+        //    currInfoPanel.SetActive(false);
+        //    currInfoPanel = infoPanelLand;
+        //    if (infoOpen) currInfoPanel.SetActive(true);
+        //}
+
+        if (currInfoPanel != infoPanelPort && Screen.orientation == ScreenOrientation.Portrait)
+        {
             currInfoPanel.SetActive(false);
             currInfoPanel = infoPanelPort;
+            //screenshotBut.anchorMin = new Vector2(0, 0);
+            //screenshotBut.anchorMax = new Vector2(0, 0);
+            //screenshotBut.localPosition = new Vector3(120, 120, 0);
             if (infoOpen) currInfoPanel.SetActive(true);
         }
-        if (currInfoPanel != infoPanelLand && (Input.deviceOrientation == DeviceOrientation.LandscapeLeft| Input.deviceOrientation == DeviceOrientation.LandscapeLeft)) {
+        if (currInfoPanel != infoPanelLand && Screen.orientation == ScreenOrientation.Landscape)
+        {
             currInfoPanel.SetActive(false);
             currInfoPanel = infoPanelLand;
+            //screenshotBut.anchorMin = new Vector2(1, 1);
+            //screenshotBut.anchorMax = new Vector2(1, 1);
+            //screenshotBut.localPosition = new Vector3(-120, -120, 0);
             if (infoOpen) currInfoPanel.SetActive(true);
         }
+
 
         //if (isScalePlus) {
         //    currentMode[currentItem].transform.localScale = new Vector3(transform.localScale.x+scaleMode, transform.localScale.y + scaleMode, transform.localScale.z + scaleMode);
@@ -121,9 +157,29 @@ public class MainSceneManager : MonoBehaviour {
     }
     public void ChangeSofaMaterial(GameObject g)
     {
-        g.GetComponent<MeshRenderer>().material = sofaMaterials[currSofaMatIndex];
+        switch (g.transform.parent.name) {
+            case "sofa_1":
+                currMaterials = sofa1Materials;
+                break;
+            case "sofa_2":
+                currMaterials = sofa2Materials;
+                break;
+            case "sofa_3":
+                currMaterials = sofa3Materials;
+                break;
+            case "armchair_1":
+                currMaterials = chair1Materials;
+                break;
+            case "armchair_2":
+                currMaterials = chair2Materials;
+                break;
+            case "armchair_3":
+                currMaterials = chair3Materials;
+                break;
+        }
+        g.GetComponent<MeshRenderer>().material = currMaterials[currSofaMatIndex];
         currSofaMatIndex++;
-        if (currSofaMatIndex == sofaMaterials.Length) currSofaMatIndex -= sofaMaterials.Length;
+        if (currSofaMatIndex == currMaterials.Length) currSofaMatIndex -= currMaterials.Length;
     }
 
     public void ChangeFirePlaceMaterial(GameObject g)
