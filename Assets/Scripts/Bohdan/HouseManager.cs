@@ -45,17 +45,21 @@ public class HouseManager : MonoBehaviour
 
     private void Cast()
     {
-        Ray ray = _camera.ScreenPointToRay(Input.GetTouch(0).position);
-        RaycastHit _hit;
-
-        if (Physics.Raycast(ray, out _hit, 100f))
+        if (!Application.isEditor)
         {
-            if (_hit.collider.name == _houseButton.name)
+            Ray ray = _camera.ScreenPointToRay(Input.GetTouch(0).position);
+            RaycastHit _hit;
+
+            if (Physics.Raycast(ray, out _hit, 100f))
             {
-                ShowHouse();
-            } else if (_hit.collider.name == _planButton.name)
-            {
-                ShowPlan();
+                if (_hit.collider.name == _houseButton.name)
+                {
+                    ShowHouse();
+                }
+                else if (_hit.collider.name == _planButton.name)
+                {
+                    ShowPlan();
+                }
             }
         }
     }
