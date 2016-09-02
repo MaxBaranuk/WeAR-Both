@@ -57,7 +57,6 @@ namespace Vuforia
                 newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
             {
                 OnTrackingFound();
-                Debug.Log("Hkjsbgdjabsdmhbamjsbdhmjahsbvdhjasbdjabhsd");
             }
             else
             {
