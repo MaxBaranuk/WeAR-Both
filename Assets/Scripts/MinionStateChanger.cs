@@ -90,7 +90,7 @@ public class MinionStateChanger : MonoBehaviour {
             anim.SetTrigger("Null");
         }
 
-        if (Random.value > 0.5f) StartCoroutine(Banana(currTrigger));
+        if (Random.value > 0.5f) if (Banana(currTrigger) != null) StartCoroutine(Banana(currTrigger));
         else StartCoroutine(Bello(currTrigger));
     }
 

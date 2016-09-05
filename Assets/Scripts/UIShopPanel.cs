@@ -23,7 +23,7 @@ public class UIShopPanel : MonoBehaviour {
     }
 
     public void HideButtons() {
-        StartCoroutine(Hide());
+        if (Hide()!= null) StartCoroutine(Hide());
     }
 
     public void HeadSelect() {

@@ -11,13 +11,18 @@ namespace Vuforia
     /// <summary>
     /// A custom handler that implements the ITrackableEventHandler interface.
     /// </summary>
-    public class FutureLabEventHandler : MonoBehaviour,
+    public class PointerMinionTargetBehaviour : MonoBehaviour,
                                                 ITrackableEventHandler
     {
-        [SerializeField] private GameObject AIM;
-        [SerializeField] private GameObject FutureLab;
+        [SerializeField]
+        private GameObject AIM;
+        [SerializeField]
+        private GameObject MinionPhoto;
+        [SerializeField]
+        private GameObject MinionPhotoPanel;
 
-        [SerializeField] private GameObject[] TargetAndCanvas;
+        [SerializeField]
+        private GameObject[] TargetAndCanvas;
 
         #region PRIVATE_MEMBER_VARIABLES
 
@@ -39,9 +44,7 @@ namespace Vuforia
         }
 
         #endregion // UNTIY_MONOBEHAVIOUR_METHODS
-
-
-
+        
         #region PUBLIC_METHODS
 
         /// <summary>
@@ -65,26 +68,26 @@ namespace Vuforia
         }
 
         #endregion // PUBLIC_METHODS
-
-
-
-        #region PRIVATE_METHODS
         
+        #region PRIVATE_METHODS
+
         private void OnTrackingFound()
         {
             AIM.SetActive(false);
-            FutureLab.SetActive(true);
+            MinionPhoto.SetActive(true);
+            MinionPhotoPanel.SetActive(true);
 
             foreach (var go in TargetAndCanvas)
             {
                 if (go.activeSelf) go.SetActive(false);
-            }            
+            }
         }
 
         private void OnTrackingLost()
         {
             AIM.SetActive(true);
-            FutureLab.SetActive(false);
+            MinionPhoto.SetActive(false);
+            MinionPhotoPanel.SetActive(false);
         }
 
         #endregion // PRIVATE_METHODS
