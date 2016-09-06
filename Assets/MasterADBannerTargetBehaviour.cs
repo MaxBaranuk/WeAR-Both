@@ -11,7 +11,7 @@ namespace Vuforia
     /// <summary>
     /// A custom handler that implements the ITrackableEventHandler interface.
     /// </summary>
-    public class WeARBannerTargetBehaviour : MonoBehaviour,
+    public class MasterADBannerTargetBehaviour : MonoBehaviour,
                                                 ITrackableEventHandler
     {
         [SerializeField]
