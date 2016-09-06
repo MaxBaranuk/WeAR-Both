@@ -16,6 +16,7 @@ namespace Vuforia
     {
         [SerializeField] private GameObject AIM;
         [SerializeField] private GameObject FutureLab;
+        [SerializeField] private GameObject FutureLabPanel;
 
         [SerializeField] private GameObject[] TargetAndCanvas;
 

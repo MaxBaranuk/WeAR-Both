@@ -50,7 +50,7 @@ public class UIButton : MonoBehaviour {
             transform.localScale = new Vector3(scale, scale, scale);
             currentRadius -= moveStep;
             scale -= scaleStep;
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(0.1f);
         }
         if (moveStep != 0) gameObject.GetComponent<RectTransform>().localPosition = new Vector3(0 , 0 , 0);
         gameObject.transform.localScale = new Vector3(0, 0, 0);
