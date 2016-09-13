@@ -118,7 +118,7 @@ public class MinionStateChanger : MonoBehaviour {
 
     IEnumerator ShopState() {
         yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("Start Idle1"));
-        currentShopState = ClothesState.Nothing;
+//        currentShopState = ClothesState.Nothing;
         foreach (GameObject g in curr)
         {
             g.SetActive(false);

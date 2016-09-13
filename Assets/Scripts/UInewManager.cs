@@ -109,12 +109,15 @@ public class UInewManager : MonoBehaviour {
     }
     
     IEnumerator Open() {
-        if (SceneStateManager.instance.isSelfieMode) {
+        if (SceneStateManager.instance.isSelfieMode)
+        {
             //CameraDevice.Instance.Stop();
             //CameraDevice.Instance.Init(CameraDevice.CameraDirection.CAMERA_DEFAULT);
             //CameraDevice.Instance.Start();
             selfiePanel.SetActive(false);
-        } 
+
+        }
+        SceneStateManager.instance.curentManager.SetActive(false);
         buttonsPanel.SetActive(true);
         menuButton.GetComponent<Button>().interactable = false;
 

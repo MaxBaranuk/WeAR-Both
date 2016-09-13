@@ -25,7 +25,7 @@ function LateUpdate() {
 	var length:int = GetComponent.<ParticleSystem>().GetParticles(particles);
 	var i:int = 0;
 	while (i < length){
- 		if(_explosionSound.Length > 0 && particles[i].lifetime < Time.deltaTime){
+ 		if(_explosionSound.Length > 0 && particles[i].remainingLifetime < Time.deltaTime){
  			SoundController.instance.Play(_explosionSound[Random.Range(0, _explosionSound.Length)], Random.Range(_explosionVolumeMax,_explosionVolumeMin), Random.Range(_explosionPitchMin,_explosionPitchMax), particles[i].position);
 			if(_crackleSound.Length > 0){
 			for(var j:int = 0; j <_crackleMultiplier; j++){
@@ -33,7 +33,7 @@ function LateUpdate() {
 			}
  		}
  		}
- 		if(_shootSound.Length > 0 && particles[i].lifetime >= particles[i].startLifetime-Time.deltaTime){
+ 		if(_shootSound.Length > 0 && particles[i].remainingLifetime >= particles[i].startLifetime-Time.deltaTime){
  			SoundController.instance.Play(_shootSound[Random.Range(0, _shootSound.Length)], Random.Range(_shootVolumeMax,_shootVolumeMin), Random.Range(_shootPitchMin,_shootPitchMax), particles[i].position);
 		}
 		i++;

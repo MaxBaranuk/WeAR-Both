@@ -17,6 +17,9 @@ public class UIShopPanel : MonoBehaviour {
     void Update () {
 	
 	}
+    void OnDisable() {
+        minion.currentShopState = MinionStateChanger.ClothesState.Nothing;
+    }
 
     public void ShowButtons() {
         StartCoroutine(Show());

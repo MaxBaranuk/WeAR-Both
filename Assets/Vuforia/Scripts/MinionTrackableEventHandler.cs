@@ -120,10 +120,11 @@ namespace Vuforia
             {
 
                 target.SetActive(true);
-                minionCanvas.SetActive(false);
+                
                 SceneStateManager.instance.curentManager.SetActive(false);
                 SceneStateManager.instance.targetFind = false;
                 minionScene.SetActive(false);
+                minionCanvas.SetActive(false);
             }
             //            indicator.SetActive(false);
             //            houseScene.SetActive (false);
