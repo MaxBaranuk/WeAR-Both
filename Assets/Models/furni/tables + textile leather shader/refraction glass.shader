@@ -131,7 +131,7 @@ Shader "Shader Forge/refraction" {
                 #ifdef LIGHTMAP_OFF
                     light.color = lightColor;
                     light.dir = lightDirection;
-                    light.ndotl = LambertTerm (normalDirection, light.dir);
+ //                   light.ndotl = LambertTerm (normalDirection, light.dir);
                 #else
                     light.color = half3(0.f, 0.f, 0.f);
                     light.ndotl = 0.0f;
