@@ -6,7 +6,7 @@ public class InfoPanel : MonoBehaviour
     EducationView manager;
 
     void Start() {
-        manager = GameObject.Find("InfoManager").GetComponent<EducationView>();
+        manager = GameObject.Find("MinionScene").GetComponentInChildren<EducationView>();
 
     }
 

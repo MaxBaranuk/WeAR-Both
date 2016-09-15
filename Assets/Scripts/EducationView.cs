@@ -34,6 +34,7 @@ public class EducationView : MonoBehaviour
         minionClothe.SetDefaultClothes();
         anim.SetTrigger("Null");
         anim.SetTrigger("Idle2");
+        infoPanels.SetActive(true);
     }
         void Update()
 	{
@@ -43,47 +44,84 @@ public class EducationView : MonoBehaviour
 
     public void UserInput()
 	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-			RaycastHit hit;
-            
+        if (!Application.isEditor)
+        {
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+                RaycastHit hit;
 
-            if (Physics.Raycast (ray, out hit, 100)) {
-				if (hit.transform.gameObject.tag == "Information"&& !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject()) {
-					Debug.Log (hit.transform.name);
-
-                    switch (hit.transform.name)
+                if (Physics.Raycast(ray, out hit, 100))
+                {
+                    if (hit.transform.gameObject.tag == "Information" && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
                     {
-                        case "Info1":
-                            OpenLotInfo(0);
-                            break;
-                        case "Info2":
-                            OpenLotInfo(1);
-                            break;
-                        case "Info3":
-                            OpenLotInfo(2);
-                            break;
-                        case "Info4":
-                            OpenLotInfo(3);
-                            break;
-                        case "Video":
-                            OpenLotInfo(4);
-                            break;
+                        Debug.Log(hit.transform.name);
 
+                        switch (hit.transform.name)
+                        {
+                            case "Info1":
+                                OpenLotInfo(0);
+                                break;
+                            case "Info2":
+                                OpenLotInfo(1);
+                                break;
+                            case "Info3":
+                                OpenLotInfo(2);
+                                break;
+                            case "Info4":
+                                OpenLotInfo(3);
+                                break;
+                            case "Video":
+                                OpenLotInfo(4);
+                                break;
+                        }
                     }
-					
+                }
+            }
+        }
 
-				}
-			}
-		}
-	}
+        if (Application.isEditor)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit, 100))
+                {
+                    if (hit.transform.gameObject.tag == "Information" && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
+                    {
+                        Debug.Log(hit.transform.name);
+
+                        switch (hit.transform.name)
+                        {
+                            case "Info1":
+                                OpenLotInfo(0);
+                                break;
+                            case "Info2":
+                                OpenLotInfo(1);
+                                break;
+                            case "Info3":
+                                OpenLotInfo(2);
+                                break;
+                            case "Info4":
+                                OpenLotInfo(3);
+                                break;
+                            case "Video":
+                                OpenLotInfo(4);
+                                break;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 	public void OpenLotInfo(int index)
 	{
         Ipanels[index].SetActive(true);
         Ipanels[index].GetComponent<InfoPanel>().OpenPanel();
-        infoPanels.SetActive(false);
+//        infoPanels.SetActive(false);
 
     }
 
@@ -93,6 +131,7 @@ public class EducationView : MonoBehaviour
         minion.SetActive(false);
         shadow.SetActive(false);
         platform.SetActive(false);
+        infoPanels.SetActive(false);
     }
 
     }
