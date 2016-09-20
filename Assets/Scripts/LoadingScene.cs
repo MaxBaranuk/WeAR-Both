@@ -14,7 +14,7 @@ public class LoadingScene : MonoBehaviour {
         StartCoroutine(ShowImages()); 
 	}
 	
-	IEnumerator ShowImages() {
+	private IEnumerator ShowImages() {
         int count = 0;
         while (true) {
             image.GetComponent<Image>().sprite = loadingImages[count];
