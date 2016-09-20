@@ -14,12 +14,7 @@ public class LoadingScene : MonoBehaviour {
         StartCoroutine(ShowImages()); 
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    IEnumerator ShowImages() {
+	IEnumerator ShowImages() {
         int count = 0;
         while (true) {
             image.GetComponent<Image>().sprite = loadingImages[count];
